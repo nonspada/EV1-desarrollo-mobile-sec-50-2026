@@ -5,12 +5,10 @@ import { Text, View } from '@/components/Themed';
 import { useLocalSearchParams } from 'expo-router';
 
 export default function ProfileScreen() {
-
-    const { email } = useLocalSearchParams < { email: string } >();
+    const { email } = useLocalSearchParams<{ email?: string }>();
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Welcome, {email}!</Text>
             <Text style={styles.title}>Email: {email}</Text>
             <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
             <EditScreenInfo path="app/(tabs)/index.tsx" />
