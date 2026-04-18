@@ -3,6 +3,8 @@ import { router } from "expo-router";
 import { useState } from "react";
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
+import Colors from '@/constants/Colors';
+
 // Credenciales válidas para el login 
 const VALID_EMAIL = 'usuario@correo.com';
 const VALID_PASSWORD = '1234';
@@ -42,19 +44,21 @@ export default function LoginScreen() {
 
     // Renderiza la pantalla de login con campos de texto para el email y la contraseña, y un botón de login
     return (
-        <View style={styles.container}>
-            <Text style={styles.title}>Login Screen</Text>
+        <View style={[styles.container, { backgroundColor: Colors.light.background }]}>
+            <Text style={[styles.title, { color: Colors.light.text }]}>Login Screen</Text>
 
             <TextInput placeholder="Email"
                 keyboardType="email-address"
                 autoCapitalize="none"
-                style={styles.input}
+                style={[styles.input, { color: Colors.light.text, backgroundColor: '#fff' }]}
+                placeholderTextColor="#999"
                 value={email}
                 onChangeText={handleEmailChange} />
 
             <TextInput placeholder="Password"
                 secureTextEntry
-                style={styles.input}
+                style={[styles.input, { color: Colors.light.text, backgroundColor: '#fff' }]}
+                placeholderTextColor="#999"
                 value={password}
                 onChangeText={handlePasswordChange} />
 
@@ -82,7 +86,7 @@ const styles = StyleSheet.create({
     input: {
         width: '80%',
         height: 40,
-        borderColor: 'gray',
+        borderColor: '#ccc',
         borderWidth: 1,
         borderRadius: 4,
         paddingHorizontal: 8,

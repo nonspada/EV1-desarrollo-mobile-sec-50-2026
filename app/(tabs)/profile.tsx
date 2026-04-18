@@ -6,6 +6,7 @@ import { useLocalSearchParams } from 'expo-router';
 
 export default function ProfileScreen() {
     const { email } = useLocalSearchParams<{ email?: string }>();
+    const { password } = useLocalSearchParams<{ password?: string }>();
 
     return (
         <View style={styles.container}>
