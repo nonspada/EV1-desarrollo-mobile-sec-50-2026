@@ -3,7 +3,7 @@ import { router } from "expo-router";
 import { useState } from "react";
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
-// Credenciales válidas para el login
+// Credenciales válidas para el login 
 const VALID_EMAIL = 'usuario@correo.com'
 const VALID_PASSWORD = '1234'
 
@@ -102,4 +102,3 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
 });
-
