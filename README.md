@@ -121,6 +121,10 @@ Esto se controla desde:
 }
 ```
 
+## 🎥 Video demostración
+
+- [Ver video en YouTube](https://youtu.be/8Oc_VQlDXiI)
+
 ## 📌 Notas
 
 - Si ves estilos antiguos en Expo, limpia la caché con:
